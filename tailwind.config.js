@@ -25,6 +25,58 @@ module.exports = {
         'spin-slow': { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
         'wiggle': { '0%,100%': { transform: 'rotate(-3deg)' }, '50%': { transform: 'rotate(3deg)' } },
         'progress-bar': { '0%': { width: '0%' }, '100%': { width: '100%' } },
+        'comet': { 
+          '0%': { 
+            transform: 'translateX(-100vw) translateY(0)',
+            opacity: 0 
+          }, 
+          '10%': { 
+            opacity: 1 
+          },
+          '90%': { 
+            opacity: 1 
+          },
+          '100%': { 
+            transform: 'translateX(100vw) translateY(-100px)',
+            opacity: 0 
+          } 
+        },
+        'bounce-in': { 
+          '0%': { 
+            transform: 'scale(0.3)',
+            opacity: 0 
+          }, 
+          '50%': { 
+            transform: 'scale(1.05)',
+            opacity: 0.8 
+          },
+          '70%': { 
+            transform: 'scale(0.9)',
+            opacity: 0.9 
+          },
+          '100%': { 
+            transform: 'scale(1)',
+            opacity: 1 
+          } 
+        },
+        'orbit': { 
+          '0%': { 
+            transform: 'rotate(0deg) translateX(20px) rotate(0deg)' 
+          }, 
+          '100%': { 
+            transform: 'rotate(360deg) translateX(20px) rotate(-360deg)' 
+          } 
+        },
+        'pulse-glow': { 
+          '0%,100%': { 
+            boxShadow: '0 0 20px rgba(171, 35, 238, 0.3)',
+            transform: 'scale(1)' 
+          }, 
+          '50%': { 
+            boxShadow: '0 0 40px rgba(171, 35, 238, 0.6)',
+            transform: 'scale(1.05)' 
+          } 
+        },
       },
       animation: {
         'fade-in': 'fade-in 0.7s cubic-bezier(0.4,0,0.2,1) both',
@@ -44,6 +96,10 @@ module.exports = {
         'spin-slow': 'spin-slow 12s linear infinite',
         'wiggle': 'wiggle 1.2s ease-in-out infinite',
         'progress-bar': 'progress-bar 2.2s cubic-bezier(0.4,0,0.2,1) both',
+        'comet': 'comet 4s linear infinite',
+        'bounce-in': 'bounce-in 1s ease-out',
+        'orbit': 'orbit 8s linear infinite',
+        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
       },
     },
   },
