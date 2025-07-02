@@ -19,10 +19,11 @@ function useWaveAnimation() {
 // Header visual para WaveLive
 function WaveLiveHeader() {
   return (
-    <div className="relative flex flex-col items-center justify-center py-4 mb-2 bg-gradient-to-tr from-[#1a1420] via-[#2d1a3a] to-[#ab23ee]/30 rounded-2xl shadow-lg">
-      <img src="/logo_v2.png" alt="WaveStudio Logo" className="w-12 h-12 mb-1 drop-shadow-lg animate-pulse" />
-      <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-[#ab23ee] to-[#b7011e] mb-0.5 tracking-tight">WaveLive</h1>
-      <p className="text-sm text-white/80 font-medium">Chats en tiempo real con tus clientes y agentes IA</p>
+    <div className="mb-10 flex flex-col items-center">
+      <img src="/live_v2.png" alt="WaveLive Logo" className="w-[350px] h-[75px] mb-2 drop-shadow-lg ml-12" style={{objectFit:'contain'}} />
+      <p className="text-lg text-gray-300 max-w-2xl text-center">
+        Chats en tiempo real con tus clientes y agentes IA
+      </p>
     </div>
   );
 }

@@ -121,9 +121,8 @@ export default function WaveInsights() {
   return (
     <section className="flex flex-col gap-8">
       {/* Header analítica */}
-      <div className="relative flex flex-col items-center justify-center py-2 mb-2 bg-gradient-to-tr from-[#1a1420] via-[#2d1a3a] to-[#ab23ee]/30 rounded-2xl shadow-lg">
-        <img src="/logo_v2.png" alt="WaveStudio Logo" className="w-12 h-12 mb-1 drop-shadow-lg" />
-        <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-[#ab23ee] to-[#b7011e] mb-0.5">WaveInsights</h1>
+      <div className="relative flex items-center justify-center gap-4 mb-6">
+        <img src="/insight_v2.png" alt="WaveInsights Logo" className="w-[350px] h-[75px] drop-shadow-lg" style={{objectFit:'contain'}} />
         <p className="text-sm text-white/80 font-medium">Analítica avanzada de tus agentes IA en tiempo real</p>
       </div>
       {/* KPIs */}

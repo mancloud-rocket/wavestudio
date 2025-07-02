@@ -32,7 +32,7 @@ export default function WaveDeploy() {
     <section className="flex flex-col items-center min-h-screen w-full bg-[#232327] py-12 px-4">
       <div className="w-full max-w-5xl">
         <header className="mb-10 flex flex-col items-center">
-          <h1 className="text-4xl font-bold text-white mb-2 drop-shadow">🌐 WaveDeploy</h1>
+          <img src="/deploy_v2.png" alt="WaveDeploy Logo" className="w-[350px] h-[75px] mb-2 drop-shadow-lg" style={{objectFit:'contain'}} />
           <p className="text-lg text-gray-300 max-w-2xl text-center">
             Configura y gestiona todos tus canales de despliegue, branding y enrutamiento de agentes.
           </p>

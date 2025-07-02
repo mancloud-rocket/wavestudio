@@ -24,9 +24,8 @@ type Prompt = {
 
 function WavePromptHeader() {
   return (
-    <div className="relative flex flex-col items-center justify-center py-4 mb-2 bg-gradient-to-tr from-[#1a1420] via-[#2d1a3a] to-[#ab23ee]/30 rounded-2xl shadow-lg w-full">
-      <img src="/logo_v2.png" alt="WaveStudio Logo" className="w-12 h-12 mb-1 drop-shadow-lg animate-pulse" />
-      <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-[#ab23ee] to-[#b7011e] mb-0.5 tracking-tight">WavePrompt</h1>
+    <div className="relative flex items-center justify-center gap-4 mb-2 w-full">
+      <img src="/prompt_v2.png" alt="WavePrompt Logo" className="w-[350px] h-[75px] drop-shadow-lg animate-pulse" style={{objectFit:'contain'}} />
       <p className="text-sm text-white/80 font-medium">Gestiona el prompt master y directrices de tus agentes IA</p>
     </div>
   );
@@ -72,7 +71,7 @@ export default function WavePrompt() {
   const idiomasDisponibles = ['Español', 'Inglés', 'Portugués', 'Francés', 'Alemán'];
 
   return (
-    <section className="flex flex-col items-center justify-center h-full w-full gap-8">
+    <section className="flex flex-col items-center w-full gap-2 pt-4">
       <WavePromptHeader />
       <div className="w-full max-w-4xl flex flex-col gap-6">
         {/* Header y botón crear */}

@@ -174,7 +174,7 @@ export default function WaveBuilder() {
           )}
           {/* Header */}
           <div className="flex flex-col items-center gap-2 mb-2">
-            <img src="/builder.png" alt="WaveBuilder Logo" className="max-w-xs w-auto h-16 mb-1" style={{objectFit:'contain'}} />
+            <img src="/builder_v2.png" alt="WaveBuilder Logo" className="w-[350px] h-[75px] mb-1" style={{objectFit:'contain'}} />
             {etapaActual.icon}
             <p className="text-base text-white/80 font-medium">Crea tu agente digital paso a paso, ¡en el universo Rocketbot!</p>
           </div>
