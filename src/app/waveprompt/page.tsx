@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { supabase } from '../wavebuilder/page';
+import { supabase } from '../../lib/supabase';
 import { PlusIcon, UserIcon, ExclamationTriangleIcon, SparklesIcon } from '@heroicons/react/24/solid';
 
 const AGENT_EXCEPTIONS = [

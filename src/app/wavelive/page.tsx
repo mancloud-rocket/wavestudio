@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import { supabase } from "../wavebuilder/page";
+import { supabase } from '../../lib/supabase';
 import { UserIcon, ChatBubbleLeftRightIcon, ClockIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 import { useState as useReactState } from 'react';
 

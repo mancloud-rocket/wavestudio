@@ -1,11 +1,7 @@
 "use client";
 import { useState, useEffect, useMemo } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../../lib/supabase';
 import { RocketLaunchIcon, BuildingOffice2Icon, UsersIcon, ServerStackIcon, DevicePhoneMobileIcon, InformationCircleIcon, SparklesIcon, SunIcon, MoonIcon, GlobeAltIcon } from '@heroicons/react/24/solid';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-export const supabase = createClient(supabaseUrl, supabaseKey);
 
 const etapas = [
   {
