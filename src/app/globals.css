@@ -1,0 +1,77 @@
+@import '@fontsource/inter/index.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', 'San Francisco', 'Segoe UI', 'Roboto', 'system-ui', -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+}
+
+/* Animaciones y utilidades globales */
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px #00fff0) drop-shadow(0 0 2px #fff);
+}
+.animate-spin-slow {
+  animation: spin 4s linear infinite;
+}
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.animate-bg-move {
+  animation: bgmove 16s linear infinite alternate;
+}
+.animate-spin-on-hover:hover {
+  animation: spin 1s linear infinite;
+}
+.animate-fade-in { animation: fadeIn 0.7s cubic-bezier(.39,.575,.565,1) both; }
+.animate-bounce-in { animation: bounceIn 0.7s cubic-bezier(.39,.575,.565,1) both; }
+.animate-pulse { animation: pulse 1.5s cubic-bezier(.4,0,.6,1) infinite; }
+.animate-realtime-glow { animation: realtimeGlow 2.2s ease-in-out infinite alternate; }
+.animate-realtime-move { animation: realtimeMove 1.2s ease-in-out infinite alternate; }
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+@keyframes glow {
+  0% { text-shadow: 0 0 8px #ab23ee, 0 0 2px #fff; }
+  100% { text-shadow: 0 0 24px #b7011e, 0 0 8px #fff; }
+}
+@keyframes bgmove {
+  0% { filter: blur(0px); }
+  100% { filter: blur(8px); }
+}
+@keyframes fadeIn { 0% { opacity: 0; transform: translateY(16px);} 100% { opacity: 1; transform: none; } }
+@keyframes bounceIn { 0% { opacity: 0; transform: scale(0.8);} 60% { opacity: 1; transform: scale(1.05);} 100% { opacity: 1; transform: scale(1); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .6; } }
+@keyframes realtimeGlow { 0% { box-shadow: 0 0 0px #ab23ee44; } 100% { box-shadow: 0 0 16px #ab23ee99; } }
+@keyframes realtimeMove { 0% { transform: translateY(0px); } 100% { transform: translateY(-2px) scale(1.01); } }
+@keyframes bubbleMove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-32px) scale(1.04); }
+}
+
+/* Fondo transparente solo para WaveBuilder */
+.wavebuilder-bg {
+  background: transparent !important;
+}
