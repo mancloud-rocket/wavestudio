@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect, MouseEvent } from 'react';
-import { supabase } from '../wavebuilder/page';
+import { supabase } from '../../lib/supabase';
 
 interface Node {
   id: number;
